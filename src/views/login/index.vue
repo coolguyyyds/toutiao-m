@@ -1,7 +1,9 @@
 <template>
   <div class="login-container" >
     <!-- 导航栏 -->
-    <van-nav-bar class="page-nav-bar" title="登录"  />
+    <van-nav-bar class="page-nav-bar" title="登录"  >
+      <van-icon slot="left" name="cross" size="18" @click="$router.back()" />
+    </van-nav-bar>
     <!-- /导航栏 -->
     <!-- 表单 -->
     <van-form @submit="onSubmit" ref="form">
@@ -80,6 +82,8 @@ export default {
         const res = await loginAPI(user)
         this.$toast.success('登录成功')
         this.$store.commit('setUser', res.data.data)
+        // 功能优化再做修改 该方法不严谨
+        this.$router.back()
       } catch (err) {
         if (err.response.status === 400) {
           this.$toast.fail('账号或验证码出现错误')

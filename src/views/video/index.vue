@@ -1,10 +1,10 @@
 <template>
-  <div class="home-container">我是home页面</div>
+  <div class="video-container">我是视频页面</div>
 </template>
 
 <script>
 export default {
-  name: 'HomeIndex'
+  name: 'VideoIndex'
 }
 </script>
 
