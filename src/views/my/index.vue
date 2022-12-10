@@ -105,6 +105,8 @@ export default {
         const { data } = await getUserInfoAPI()
         this.userInfo = data.data
       } catch (err) {
+        // 当 token 过期后清除user中的token 请用户重新登录
+        // this.$store.commit('setUser', null)
         this.$toast('错误, 请稍后重试')
       }
     }

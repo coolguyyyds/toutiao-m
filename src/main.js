@@ -12,7 +12,7 @@ import './styles/index.less'
 
 // 动态设置 rem 基准值
 import 'amfe-flexible'
-
+import './utils/dayjs'
 Vue.config.productionTip = false
 
 // 注册使用 Vant 组件库
