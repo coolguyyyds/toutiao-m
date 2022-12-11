@@ -9,6 +9,7 @@
         icon="search"
         type="info"
         size="small"
+        to="/search"
         >搜索</van-button
       >
     </van-nav-bar>
