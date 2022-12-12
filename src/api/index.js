@@ -12,6 +12,10 @@ import {
   updateChannels,
   deleteChannel
 } from './channel'
+import {
+  searchSuggestion,
+  searchResult
+} from './search'
 // 用户接口
 export const loginAPI = login
 export const sendCodeAPI = sendCode
@@ -23,3 +27,6 @@ export const getArticlesAPI = getArticles
 export const allChannelAPI = allChannel
 export const updateChannelsAPI = updateChannels
 export const deleteChannelAPI = deleteChannel
+// 搜索接口
+export const searchSuggestionAPI = searchSuggestion
+export const searchResultAPI = searchResult
