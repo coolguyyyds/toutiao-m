@@ -58,7 +58,7 @@ export default {
   props: {
     channelList: {
       type: Array,
-      require: true
+      required: true
     },
     active: {
       type: Number,

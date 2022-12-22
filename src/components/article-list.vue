@@ -27,7 +27,7 @@ export default {
   props: {
     channel: {
       type: Object,
-      require: true
+      required: true
     }
   },
   data () {

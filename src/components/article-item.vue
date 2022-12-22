@@ -1,5 +1,5 @@
 <template>
-  <van-cell class="article-item">
+  <van-cell class="article-item" :to="{name: 'article', params: {articleId: article.art_id}}">
     <div slot="title" class="title van-multi-ellipsis--l2">{{ article.title }}</div>
     <div slot="label">
       <div class="item-warp" v-if="article.cover.type === 3">
@@ -27,7 +27,7 @@ export default {
   props: {
     article: {
       type: Object,
-      require: true
+      required: true
     }
   }
 }
